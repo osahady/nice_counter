@@ -11,6 +11,7 @@ import 'package:nice_counter_app/01_counter/counter.dart';
 import 'package:nice_counter_app/01_counter/widgets/widgets.dart';
 
 import 'package:nice_counter_app/l10n/l10n.dart';
+import 'package:sizer/sizer.dart';
 
 class CounterPage extends StatelessWidget {
   const CounterPage({Key? key}) : super(key: key);
@@ -36,7 +37,7 @@ class CounterView extends StatelessWidget {
         children: [
           const PlasmaBackground(),
           Positioned(
-            top: 48,
+            top: 10.0.h,
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -45,7 +46,7 @@ class CounterView extends StatelessWidget {
               ],
             ),
           ),
-          const Positioned(bottom: 48, child: CounterSlider()),
+          Positioned(bottom: 8.0.h, child: const CounterSlider()),
         ],
       ),
     );

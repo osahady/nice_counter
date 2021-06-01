@@ -13,6 +13,7 @@ import 'package:nice_counter_app/02_theme/cubit/theme_cubit.dart';
 import 'package:nice_counter_app/core/app_router.dart';
 import 'package:nice_counter_app/core/themes/app_theme.dart';
 import 'package:nice_counter_app/l10n/l10n.dart';
+import 'package:sizer/sizer.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -64,8 +65,8 @@ class _CounterAppState extends State<CounterApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return OrientationBuilder(builder: (context, orientation) {
-      return MaterialApp(
+    return Sizer(
+      builder: (context, orientation, deviceType) => MaterialApp(
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: context
@@ -78,7 +79,7 @@ class _CounterAppState extends State<CounterApp> with WidgetsBindingObserver {
         debugShowCheckedModeBanner: false,
         initialRoute: AppRouter.counter,
         onGenerateRoute: AppRouter.onGenerateRoute,
-      );
-    });
+      ),
+    );
   }
 }
