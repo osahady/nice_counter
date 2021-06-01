@@ -1,0 +1,15 @@
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    },
+    "counterScreenTitle": "Counter Screen",
+    "@counterScreenTtitle": {
+        "description": "This is the home screen title"
+    },
+    "counterSreenText": "Welcome to Flutterly",
+    "@counterSreenText": {
+        "description": "welcome message shown in counter page"
+    }
+}

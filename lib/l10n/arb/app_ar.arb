@@ -1,0 +1,15 @@
+{
+    "@@locale": "ar",
+    "counterAppBarTitle": "العداد",
+    "@counterAppBarTitle": {
+        "description": "النص الظاهر على صفحة الشريط العلوي لتطبيق العداد"
+    },
+    "counterScreenTitle": "صفحة العداد",
+    "@counterScreenTtitle": {
+        "description": "العنوان الرئيسي في الصفحة"
+    },
+    "counterSreenText": "أهلا وسهلا بكم",
+    "@counterSreenText": {
+        "description": "رسالة ترحيبية في الصفحة الرئيسية"
+    }
+}
